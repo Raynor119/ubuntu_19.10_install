@@ -1,10 +1,9 @@
 apt update && apt upgrade -y && pkg install wget -y && pkg install tsu -y && pkg install proot -y && pkg install git -y
 git clone https://github.com/MFDGaming/ubuntu-in-termux.git
 cd ubuntu-in-termux
-tsu
 chmod +x ubuntu.sh
-./ubuntu.sh -y
-./startubuntu.sh
+bash ubuntu.sh -y
+bash startubuntu.sh
 su
 apt update && apt upgrade -y && apt install sudo
 sudo apt-get install language-pack-es -y
